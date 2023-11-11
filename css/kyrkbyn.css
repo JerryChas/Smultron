@@ -1,0 +1,38 @@
+main,
+body {
+  background-color: var(--other-color);
+  font-family: Poppins;
+}
+
+.kyrkbyn-section {
+  background-color: var(--other-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.kyrkby-img {
+  max-width: 40%;
+  margin: 2rem;
+  border-radius: 10px;
+  border: 6px solid white;
+  box-shadow: 10px 10px 5px 12px rgba(106, 103, 103, 0.514);
+}
+
+.kyrkby-h2 {
+  color: rgb(240, 234, 234);
+  font-size: 2rem;
+  margin: 1rem;
+  text-shadow: 5px 5px 5px rgba(106, 103, 103, 0.673);
+}
+
+.kyrkby-p {
+  max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  .kyrkby-img {
+    max-width: 100%;
+  }
+}

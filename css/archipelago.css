@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --header-clr: #FF407C;
+    --bg--clr: #FF6395; 
+    --other-color: #FFABC5;
+    --text-clr: #41942C;
+}
+
+body {
+    max-width: 100vw;
+    background-color: var(--other-color);
+}
+
+.header {
+    height:15vh;
+    width: 100vw;
+    background-color: var(--header-clr);
+    font-family: 'Kaushan Script';
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-content: space-between;
+    
+}
+.hsmultron{
+    max-height: 15vh;
+    width: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.headertext{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+
+.smultron {
+    font-size: 2.4rem;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+.smultronpic{
+    height: 90%;
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.archipelago{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-pic{
+    border: 6px solid white;
+    background-image: url(../img/luleskär.jpg);
+    background-size: cover;
+    width: 90vw;
+    height: 30vh;
+    margin: 2rem;
+    border-radius: 15px;
+}
+
+.info{
+    font-family: 'Poppins';
+    line-height: 1.3;
+    color: white;
+    background-color: #FF6395;
+    padding: 1rem;
+    margin: 1rem 1rem 10rem 1rem;
+    text-align: center;
+}
+
+.head{
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+
+
+.footer{
+    background-color: var(--header-clr);
+}
+
+.lulefot{
+    color: white;
+    font-family: 'Poppins';
+    padding: 1rem;
+}
+
+@media (min-width: 700px){
+    .headertext{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-content: center;
+        gap: 20%;
+    }
+
+    .bg-pic{
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .info{
+        font-size: 1.25rem;
+    }
+
+}
